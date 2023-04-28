@@ -18,10 +18,6 @@
             margin: auto;
         }
 
-        table{
-            position: absolute;
-        }
-
     </style>
 
 </head>
@@ -71,7 +67,7 @@
 
 <section>
     <h3 style="padding-top: 20px">Items</h3><br>
-    <table class="table table-bordered">
+    <table class="table table-bordered" style="margin-bottom:40px">
         <thead>
         <tr bgcolor="orange">
             <th scope="col">Item Name</th>
@@ -101,7 +97,39 @@
         </tr>
         </tbody>
     </table>
+
+    <form class="row g-3" style="background-color: #86b7fe; padding-bottom: 10px">
+        <h3 style="background-color: #0b5ed7">New Item</h3>
+
+        <div class="col-md-6">
+            <label for="itemCode" class="form-label">Item Code:</label>
+            <input type="text" class="form-control" id="itemCode">
+        </div>
+        <div class="col-md-6">
+            <label for="itemName" class="form-label">Item Name:</label>
+            <input type="text" class="form-control" id="itemName">
+        </div>
+        <div class="col-md-6">
+            <label for="itemPrice" class="form-label">Item Price:</label>
+            <input type="text" class="form-control" id="itemPrice">
+        </div>
+        <div class="col-md-6">
+            <label for="itemQty" class="form-label">Item Quantity:</label>
+            <input type="text" class="form-control" id="itemQty">
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" style="background-color: forestgreen">Save</button>
+            <button type="submit" class="btn btn-primary" style="background-color: red">Delete</button>
+            <button type="submit" class="btn btn-primary" style="background-color: yellow">Update</button>
+            <button type="submit" class="btn btn-primary" style="background-color: cadetblue">Search</button>
+        </div>
+
+    </form>
+
 </section>
+
+
 
 </body>
 </html>
